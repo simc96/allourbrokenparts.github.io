@@ -1,715 +1,20 @@
+<!DOCTYPE html>
 <html lang="zh-CN">
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
   <title>爱与机器人维修技术 All Our Broken Parts</title>
-  <style>
-    @layer utilities {
-      .hide-scrollbar::-webkit-scrollbar {
-        display: none;
-      }
-
-      .hide-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-    }
-  </style>
-  <style>
-    *,
-    ::before,
-    ::after {
-      --tw-border-spacing-x: 0;
-      --tw-border-spacing-y: 0;
-      --tw-translate-x: 0;
-      --tw-translate-y: 0;
-      --tw-rotate: 0;
-      --tw-skew-x: 0;
-      --tw-skew-y: 0;
-      --tw-scale-x: 1;
-      --tw-scale-y: 1;
-      --tw-pan-x: ;
-      --tw-pan-y: ;
-      --tw-pinch-zoom: ;
-      --tw-scroll-snap-strictness: proximity;
-      --tw-gradient-from-position: ;
-      --tw-gradient-via-position: ;
-      --tw-gradient-to-position: ;
-      --tw-ordinal: ;
-      --tw-slashed-zero: ;
-      --tw-numeric-figure: ;
-      --tw-numeric-spacing: ;
-      --tw-numeric-fraction: ;
-      --tw-ring-inset: ;
-      --tw-ring-offset-width: 0px;
-      --tw-ring-offset-color: #fff;
-      --tw-ring-color: rgb(59 130 246 / 0.5);
-      --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-ring-shadow: 0 0 #0000;
-      --tw-shadow: 0 0 #0000;
-      --tw-shadow-colored: 0 0 #0000;
-      --tw-blur: ;
-      --tw-brightness: ;
-      --tw-contrast: ;
-      --tw-grayscale: ;
-      --tw-hue-rotate: ;
-      --tw-invert: ;
-      --tw-saturate: ;
-      --tw-sepia: ;
-      --tw-drop-shadow: ;
-      --tw-backdrop-blur: ;
-      --tw-backdrop-brightness: ;
-      --tw-backdrop-contrast: ;
-      --tw-backdrop-grayscale: ;
-      --tw-backdrop-hue-rotate: ;
-      --tw-backdrop-invert: ;
-      --tw-backdrop-opacity: ;
-      --tw-backdrop-saturate: ;
-      --tw-backdrop-sepia: ;
-      --tw-contain-size: ;
-      --tw-contain-layout: ;
-      --tw-contain-paint: ;
-      --tw-contain-style:
-    }
-
-    ::backdrop {
-      --tw-border-spacing-x: 0;
-      --tw-border-spacing-y: 0;
-      --tw-translate-x: 0;
-      --tw-translate-y: 0;
-      --tw-rotate: 0;
-      --tw-skew-x: 0;
-      --tw-skew-y: 0;
-      --tw-scale-x: 1;
-      --tw-scale-y: 1;
-      --tw-pan-x: ;
-      --tw-pan-y: ;
-      --tw-pinch-zoom: ;
-      --tw-scroll-snap-strictness: proximity;
-      --tw-gradient-from-position: ;
-      --tw-gradient-via-position: ;
-      --tw-gradient-to-position: ;
-      --tw-ordinal: ;
-      --tw-slashed-zero: ;
-      --tw-numeric-figure: ;
-      --tw-numeric-spacing: ;
-      --tw-numeric-fraction: ;
-      --tw-ring-inset: ;
-      --tw-ring-offset-width: 0px;
-      --tw-ring-offset-color: #fff;
-      --tw-ring-color: rgb(59 130 246 / 0.5);
-      --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-ring-shadow: 0 0 #0000;
-      --tw-shadow: 0 0 #0000;
-      --tw-shadow-colored: 0 0 #0000;
-      --tw-blur: ;
-      --tw-brightness: ;
-      --tw-contrast: ;
-      --tw-grayscale: ;
-      --tw-hue-rotate: ;
-      --tw-invert: ;
-      --tw-saturate: ;
-      --tw-sepia: ;
-      --tw-drop-shadow: ;
-      --tw-backdrop-blur: ;
-      --tw-backdrop-brightness: ;
-      --tw-backdrop-contrast: ;
-      --tw-backdrop-grayscale: ;
-      --tw-backdrop-hue-rotate: ;
-      --tw-backdrop-invert: ;
-      --tw-backdrop-opacity: ;
-      --tw-backdrop-saturate: ;
-      --tw-backdrop-sepia: ;
-      --tw-contain-size: ;
-      --tw-contain-layout: ;
-      --tw-contain-paint: ;
-      --tw-contain-style:
-    }
-
-    /* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */
-    *,
-    ::after,
-    ::before {
-      box-sizing: border-box;
-      border-width: 0;
-      border-style: solid;
-      border-color: #e5e7eb
-    }
-
-    ::after,
-    ::before {
-      --tw-content: ''
-    }
-
-    :host,
-    html {
-      line-height: 1.5;
-      -webkit-text-size-adjust: 100%;
-      -moz-tab-size: 4;
-      tab-size: 4;
-      font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-      font-feature-settings: normal;
-      font-variation-settings: normal;
-      -webkit-tap-highlight-color: transparent
-    }
-
-    body {
-      margin: 0;
-      line-height: inherit
-    }
-
-    hr {
-      height: 0;
-      color: inherit;
-      border-top-width: 1px
-    }
-
-    abbr:where([title]) {
-      -webkit-text-decoration: underline dotted;
-      text-decoration: underline dotted
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-size: inherit;
-      font-weight: inherit
-    }
-
-    a {
-      color: inherit;
-      text-decoration: inherit
-    }
-
-    b,
-    strong {
-      font-weight: bolder
-    }
-
-    code,
-    kbd,
-    pre,
-    samp {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      font-feature-settings: normal;
-      font-variation-settings: normal;
-      font-size: 1em
-    }
-
-    small {
-      font-size: 80%
-    }
-
-    sub,
-    sup {
-      font-size: 75%;
-      line-height: 0;
-      position: relative;
-      vertical-align: baseline
-    }
-
-    sub {
-      bottom: -.25em
-    }
-
-    sup {
-      top: -.5em
-    }
-
-    table {
-      text-indent: 0;
-      border-color: inherit;
-      border-collapse: collapse
-    }
-
-    button,
-    input,
-    optgroup,
-    select,
-    textarea {
-      font-family: inherit;
-      font-feature-settings: inherit;
-      font-variation-settings: inherit;
-      font-size: 100%;
-      font-weight: inherit;
-      line-height: inherit;
-      letter-spacing: inherit;
-      color: inherit;
-      margin: 0;
-      padding: 0
-    }
-
-    button,
-    select {
-      text-transform: none
-    }
-
-    button,
-    input:where([type=button]),
-    input:where([type=reset]),
-    input:where([type=submit]) {
-      -webkit-appearance: button;
-      background-color: transparent;
-      background-image: none
-    }
-
-    :-moz-focusring {
-      outline: auto
-    }
-
-    :-moz-ui-invalid {
-      box-shadow: none
-    }
-
-    progress {
-      vertical-align: baseline
-    }
-
-    ::-webkit-inner-spin-button,
-    ::-webkit-outer-spin-button {
-      height: auto
-    }
-
-    [type=search] {
-      -webkit-appearance: textfield;
-      outline-offset: -2px
-    }
-
-    ::-webkit-search-decoration {
-      -webkit-appearance: none
-    }
-
-    ::-webkit-file-upload-button {
-      -webkit-appearance: button;
-      font: inherit
-    }
-
-    summary {
-      display: list-item
-    }
-
-    blockquote,
-    dd,
-    dl,
-    figure,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    hr,
-    p,
-    pre {
-      margin: 0
-    }
-
-    fieldset {
-      margin: 0;
-      padding: 0
-    }
-
-    legend {
-      padding: 0
-    }
-
-    menu,
-    ol,
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0
-    }
-
-    dialog {
-      padding: 0
-    }
-
-    textarea {
-      resize: vertical
-    }
-
-    input::placeholder,
-    textarea::placeholder {
-      opacity: 1;
-      color: #9ca3af
-    }
-
-    [role=button],
-    button {
-      cursor: pointer
-    }
-
-    :disabled {
-      cursor: default
-    }
-
-    audio,
-    canvas,
-    embed,
-    iframe,
-    img,
-    object,
-    svg,
-    video {
-      display: block;
-      vertical-align: middle
-    }
-
-    img,
-    video {
-      max-width: 100%;
-      height: auto
-    }
-
-    [hidden]:where(:not([hidden=until-found])) {
-      display: none
-    }
-
-    .relative {
-      position: relative
-    }
-
-    .mb-8 {
-      margin-bottom: 2rem
-    }
-
-    .mb-4 {
-      margin-bottom: 1rem
-    }
-
-    .mb-2 {
-      margin-bottom: 0.5rem
-    }
-
-    .mb-6 {
-      margin-bottom: 1.5rem
-    }
-
-    .mr-3 {
-      margin-right: 0.75rem
-    }
-
-    .mt-1 {
-      margin-top: 0.25rem
-    }
-
-    .block {
-      display: block
-    }
-
-    .flex {
-      display: flex
-    }
-
-    .h-\[812px\] {
-      height: 812px
-    }
-
-    .h-14 {
-      height: 3.5rem
-    }
-
-    .h-5 {
-      height: 1.25rem
-    }
-
-    .h-40 {
-      height: 10rem
-    }
-
-    .h-20 {
-      height: 5rem
-    }
-
-    .h-6 {
-      height: 1.5rem
-    }
-
-    .h-8 {
-      height: 2rem
-    }
-
-    .min-h-screen {
-      min-height: 100vh
-    }
-
-    .w-\[375px\] {
-      width: 375px
-    }
-
-    .w-5 {
-      width: 1.25rem
-    }
-
-    .w-full {
-      width: 100%
-    }
-
-    .w-6 {
-      width: 1.5rem
-    }
-
-    .w-8 {
-      width: 2rem
-    }
-
-    .flex-1 {
-      flex: 1 1 0%
-    }
-
-    .flex-col {
-      flex-direction: column
-    }
-
-    .items-center {
-      align-items: center
-    }
-
-    .justify-center {
-      justify-content: center
-    }
-
-    .justify-between {
-      justify-content: space-between
-    }
-
-    .justify-around {
-      justify-content: space-around
-    }
-
-    .space-y-4> :not([hidden])~ :not([hidden]) {
-      --tw-space-y-reverse: 0;
-      margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-      margin-bottom: calc(1rem * var(--tw-space-y-reverse))
-    }
-
-    .overflow-hidden {
-      overflow: hidden
-    }
-
-    .overflow-y-auto {
-      overflow-y: auto
-    }
-
-    .rounded-xl {
-      border-radius: 0.75rem
-    }
-
-    .border {
-      border-width: 1px
-    }
-
-    .border-b {
-      border-bottom-width: 1px
-    }
-
-    .border-t {
-      border-top-width: 1px
-    }
-
-    .border-gray-200 {
-      --tw-border-opacity: 1;
-      border-color: rgb(229 231 235 / var(--tw-border-opacity, 1))
-    }
-
-    .border-gray-100 {
-      --tw-border-opacity: 1;
-      border-color: rgb(243 244 246 / var(--tw-border-opacity, 1))
-    }
-
-    .bg-gray-100 {
-      --tw-bg-opacity: 1;
-      background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1))
-    }
-
-    .bg-white {
-      --tw-bg-opacity: 1;
-      background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1))
-    }
-
-    .bg-\[\#12B7F5\] {
-      --tw-bg-opacity: 1;
-      background-color: rgb(18 183 245 / var(--tw-bg-opacity, 1))
-    }
-
-    .bg-\[\#1b2838\] {
-      --tw-bg-opacity: 1;
-      background-color: rgb(27 40 56 / var(--tw-bg-opacity, 1))
-    }
-
-    .bg-\[\#FB7299\] {
-      --tw-bg-opacity: 1;
-      background-color: rgb(251 114 153 / var(--tw-bg-opacity, 1))
-    }
-
-    .bg-\[\#FF2442\] {
-      --tw-bg-opacity: 1;
-      background-color: rgb(255 36 66 / var(--tw-bg-opacity, 1))
-    }
-
-    .bg-black {
-      --tw-bg-opacity: 1;
-      background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1))
-    }
-
-    .object-cover {
-      object-fit: cover
-    }
-
-    .p-4 {
-      padding: 1rem
-    }
-
-    .p-6 {
-      padding: 1.5rem
-    }
-
-    .p-5 {
-      padding: 1.25rem
-    }
-
-    .px-4 {
-      padding-left: 1rem;
-      padding-right: 1rem
-    }
-
-    .text-center {
-      text-align: center
-    }
-
-    .text-lg {
-      font-size: 1.125rem;
-      line-height: 1.75rem
-    }
-
-    .text-xl {
-      font-size: 1.25rem;
-      line-height: 1.75rem
-    }
-
-    .text-xs {
-      font-size: 0.75rem;
-      line-height: 1rem
-    }
-
-    .font-bold {
-      font-weight: 700
-    }
-
-    .font-semibold {
-      font-weight: 600
-    }
-
-    .text-gray-600 {
-      --tw-text-opacity: 1;
-      color: rgb(75 85 99 / var(--tw-text-opacity, 1))
-    }
-
-    .text-gray-800 {
-      --tw-text-opacity: 1;
-      color: rgb(31 41 55 / var(--tw-text-opacity, 1))
-    }
-
-    .text-gray-900 {
-      --tw-text-opacity: 1;
-      color: rgb(17 24 39 / var(--tw-text-opacity, 1))
-    }
-
-    .text-blue-500 {
-      --tw-text-opacity: 1;
-      color: rgb(59 130 246 / var(--tw-text-opacity, 1))
-    }
-
-    .text-gray-400 {
-      --tw-text-opacity: 1;
-      color: rgb(156 163 175 / var(--tw-text-opacity, 1))
-    }
-
-    .text-white {
-      --tw-text-opacity: 1;
-      color: rgb(255 255 255 / var(--tw-text-opacity, 1))
-    }
-
-    .shadow-lg {
-      --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-      --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
-    }
-
-    .transition-all {
-      transition-property: all;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transition-duration: 150ms
-    }
-
-    .hover\:shadow-lg:hover {
-      --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-      --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
-    }
-  </style>
-
-  <style id="ZKXiaoWeiLogo">
-    @font-face {
-      font-family: 'ZKXiaoWeiLogo';
-      src: url('https://modao.cc/ai/static/fonts/ZKXiaoWeiLogo_Regular.woff2');
-      font-weight: 400;
-      font-style: normal;
-    }
-  </style>
-  <style id="Times_New_Roman">
-    @font-face {
-      font-family: 'Times New Roman';
-      src: url('https://modao.cc/ai/static/fonts/undefined');
-      font-weight: 400;
-      font-style: normal;
-    }
-
-
-    @font-face {
-      font-family: 'Times New Roman';
-      src: url('https://modao.cc/ai/static/fonts/undefined');
-      font-weight: 700;
-      font-style: normal;
-    }
-  </style>
-  <style id="YSHaoShenTi">
-    @font-face {
-      font-family: 'YSHaoShenTi';
-      src: url('https://modao.cc/ai/static/fonts/YSHaoShenTi_Regular.woff2');
-      font-weight: 400;
-      font-style: normal;
-    }
-  </style>
-  <style id="ZKGaoDuanHei">
-    @font-face {
-      font-family: 'ZKGaoDuanHei';
-      src: url('https://modao.cc/ai/static/fonts/ZKGaoDuanHei_Regular.woff2');
-      font-weight: 400;
-      font-style: normal;
-    }
-  </style>
-  <style id="ZKKuHei">
-    @font-face {
-      font-family: 'ZKKuHei';
-      src: url('https://modao.cc/ai/static/fonts/ZKKuHei_Regular.woff2');
-      font-weight: 400;
-      font-style: normal;
-    }
-  </style>
-  <style id="PMZDBiaoTi">
-    @font-face {
-      font-family: 'PMZDBiaoTi';
-      src: url('https://modao.cc/ai/static/fonts/PMZDBiaoTi_Regular.woff2');
-      font-weight: 400;
-      font-style: normal;
-    }
-  </style>
+  
+  <!-- 字体引入 -->
+  <link rel="preload" as="style" crossorigin
+      href="https://fontsapi.zeoseven.com/10/main/result.css"
+      onload="this.rel='stylesheet'"
+      onerror="this.href='https://fontsapi-storage.zeoseven.com/10/main/result.css'" />
+  <noscript>
+      <link rel="stylesheet" href="https://fontsapi.zeoseven.com/10/main/result.css" />
+  </noscript>
+  
   <style id="TaipeiHei">
     @font-face {
       font-family: 'TaipeiHei';
@@ -718,14 +23,12 @@
       font-style: normal;
     }
 
-
     @font-face {
       font-family: 'TaipeiHei';
       src: url('https://modao.cc/ai/static/fonts/TaipeiHei_Regular.woff2');
       font-weight: 400;
       font-style: normal;
     }
-
 
     @font-face {
       font-family: 'TaipeiHei';
@@ -734,83 +37,248 @@
       font-style: normal;
     }
   </style>
+  
+  <style>
+    /* 基础样式重置 */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-color: #030212;
+      color: #e0e0e0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.5;
+      overflow-x: hidden;
+      min-height: 100vh;
+      width: 100%;
+      position: relative;
+    }
+    
+    /* 防止左右滑动 */
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    
+    /* 隐藏滚动条但仍可滚动 */
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    
+    /* 主容器 */
+    .container {
+      width: 100%;
+      max-width: 600px; /* 限制最大宽度，确保在大屏上不会过度拉伸 */
+      margin: 0 auto;
+      padding: 20px 16px;
+    }
+
+      /* 标题样式 */
+    .title {
+      font-size: 2rem;
+      text-align: center;
+      margin: 24px 0;
+      color: #fff;
+      font-family: "WenQuanYi Bitmap Song 16px";
+      font-weight: bild;
+      letter-spacing: 1px;
+    } 
+    
+    /* 小标题样式 */
+    .section-title {
+      font-size: 1.25rem;
+      text-align: center;
+      margin: 24px 0;
+      color: #fff;
+      font-family: "WenQuanYi Bitmap Song 16px";
+      font-weight: normal;
+      letter-spacing: 1px;
+    }
+    
+    /* 社交媒体按钮样式 */
+    .social-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    
+    .social-button {
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      border-radius: 12px;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .social-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* 按钮点击反馈效果 */
+    .social-button:active {
+      transform: scale(0.98);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* 点击时的涟漪效果 */
+    .social-button::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 5px;
+      height: 5px;
+      background: rgba(255, 255, 255, 0.5);
+      opacity: 0;
+      border-radius: 100%;
+      transform: scale(1, 1) translate(-50%);
+      transform-origin: 50% 50%;
+    }
+    
+    .social-button:active::after {
+      animation: ripple 0.6s ease-out;
+    }
+    
+    @keyframes ripple {
+      0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+      }
+      100% {
+        transform: scale(20, 20);
+        opacity: 0;
+      }
+    }
+    
+    .social-icon {
+      width: 32px;
+      height: 32px;
+      margin-right: 12px;
+    }
+    
+    .social-name {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: white;
+    }
+    
+    /* Steam小部件适配 */
+    .steam-widget {
+      width: 100%;
+      max-width: 324px;
+      margin: 0 auto 24px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .steam-widget iframe {
+      width: 100%;
+      height: 190px;
+      border: none;
+    }
+    
+    /* 联系信息 */
+    .contact-info {
+      text-align: center;
+      margin: 32px 0;
+    }
+    
+    .contact-email {
+      font-size: 1rem;
+      color: #a0a0a0;
+      margin: 8px 0;
+      font-family: "WenQuanYi Bitmap Song 16px";
+      font-weight: normal;
+    }
+    
+    .company-name {
+      font-size: 0.875rem;
+      color: #666;
+      margin-top: 16px;
+      font-family: "WenQuanYi Bitmap Song 16px";
+      font-weight: normal;
+    }
+  </style>
 </head>
 
-<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
-  <div class="w-[375px] h-[812px] bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden flex flex-col">
-    <!-- 顶部标题栏 -->
+<body>
+  <div class="container">
 
-    <!-- 内容区域 -->
-    <main class="flex-1 overflow-y-auto hide-scrollbar">
-      <div class="p-6">
-        <!-- 页首信息 -->
-        <div class="text-center mb-8">
-          <h2 class="text-xl font-bold text-gray-900 mb-6" style="font-family: TaipeiHei; font-weight: 400;">—— 添加愿望单 ——</h2>
-          <div class="relative mb-4">
-            <iframe src="https://store.steampowered.com/widget/3473430/?t=%E6%89%AE%E6%BC%94%E8%B5%9B%E5%8D%9A%E5%8C%BB%E7%94%9F%EF%BC%8C%E6%B2%BB%E7%96%97%E6%9C%BA%E5%99%A8%E4%BA%BA%E3%80%82%E7%A5%9E%E7%A7%98%E7%96%BE%E7%97%85%E6%AD%A3%E5%9C%A8%E8%94%93%E5%BB%B6%E2%80%A6" frameborder="0" width="324" height="190"></iframe>
-          </div>
+    
+    <!-- 添加愿望单标题 -->
+    <h2 class="section-title"> 添加愿望单...</h2>
+    
+    <!-- Steam小部件 -->
+    <div class="steam-widget">
+      <iframe src="https://store.steampowered.com/widget/3473430/?t=%E6%89%AE%E6%BC%94%E8%B5%9B%E5%8D%9A%E5%8C%BB%E7%94%9F%EF%BC%8C%E6%B2%BB%E7%96%97%E6%9C%BA%E5%99%A8%E4%BA%BA%E3%80%82%E7%A5%9E%E7%A7%98%E7%96%BE%E7%97%85%E6%AD%A3%E5%9C%A8%E8%94%93%E5%BB%B6%E2%80%A6" frameborder="0"></iframe>
+    </div>
 
-          <h2 class="text-xl font-bold text-gray-900 mb-6" style="font-family: TaipeiHei; font-weight: 400;">—— 关注我们 ——</h2>
 
-        <!-- 社交媒体按钮组 -->
-        <div class="space-y-4">
-            <!-- Steam 按钮 -->
-    <a class="block" href="https://store.steampowered.com/app/3473430/_All_Our_Broken_Parts/" target="_blank">
-      <div class="bg-[#1b2838] rounded-xl p-5 flex items-center transition-all hover:shadow-lg">
-        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-icon="mdi:steam" class="iconify w-8 h-8 mr-3 text-white iconify--mdi">
-          <path fill="currentColor" d="M12 2a10 10 0 0 1 10 10a10 10 0 0 1-10 10c-4.6 0-8.45-3.08-9.64-7.27l3.83 1.58a2.84 2.84 0 0 0 2.78 2.27c1.56 0 2.83-1.27 2.83-2.83v-.13l3.4-2.43h.08c2.08 0 3.77-1.69 3.77-3.77s-1.69-3.77-3.77-3.77s-3.78 1.69-3.78 3.77v.05l-2.37 3.46l-.16-.01c-.59 0-1.14.18-1.59.49L2 11.2C2.43 6.05 6.73 2 12 2M8.28 17.17c.8.33 1.72-.04 2.05-.84s-.05-1.71-.83-2.04l-1.28-.53c.49-.18 1.04-.19 1.56.03c.53.21.94.62 1.15 1.15c.22.52.22 1.1 0 1.62c-.43 1.08-1.7 1.6-2.78 1.15c-.5-.21-.88-.59-1.09-1.04zm9.52-7.75c0 1.39-1.13 2.52-2.52 2.52a2.52 2.52 0 0 1-2.51-2.52a2.5 2.5 0 0 1 2.51-2.51a2.52 2.52 0 0 1 2.52 2.51m-4.4 0c0 1.04.84 1.89 1.89 1.89c1.04 0 1.88-.85 1.88-1.89s-.84-1.89-1.88-1.89c-1.05 0-1.89.85-1.89 1.89"></path>
-        </svg>
-        <span class="text-white font-semibold text-lg">Steam</span>
-      </div>
-    </a>
-    <!-- 小黑盒 按钮 -->
-    <a class="block" href="https://api.xiaoheihe.cn/game/share_game_detail?appid=3473430&game_type=pc&h_camp=game&h_src=ZXNfZ2VuZXJhbF92MQ%3D%3D" target="_blank">
-      <div class="bg-black rounded-xl p-5 flex items-center transition-all hover:shadow-lg">
-        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-icon="mdi:package-variant" class="iconify w-8 h-8 mr-3 text-white iconify--mdi">
-          <path fill="currentColor" d="M2 10.96a.985.985 0 0 1-.37-1.37L3.13 7c.11-.2.28-.34.47-.42l7.83-4.4c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.19.1.35.26.44.46l1.45 2.52c.28.48.11 1.09-.36 1.36l-1 .58v4.96c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-5.54c-.3.17-.68.18-1 0m10-6.81v6.7l5.96-3.35zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-3.22l-5 2.9c-.33.18-.7.17-1 .01v3.69zm-5.15-2.55l6.28-3.63l-.58-1.01l-6.28 3.63z"></path>
-        </svg>
-        <span class="text-white font-semibold text-lg">小黑盒</span>
-      </div>
-    </a>
-    <!-- Bilibili 按钮 -->
-    <a class="block" href="https://www.bilibili.com/video/BV1uCahzTEz4?buvid=Y945309401D4E1014921A032C758698FD626&is_story_h5=false&mid=oskQDzqEEbcg%2B1HyFVIZvA%3D%3D&plat_id=114&share_from=ugc&share_medium=iphone&share_plat=ios&share_source=WEIXIN&share_tag=s_i&timestamp=1762952653&unique_k=cYPHGVf&up_id=3546879799331126" target="_blank">
-      <div class="bg-[#FB7299] rounded-xl p-5 flex items-center transition-all hover:shadow-lg">
-        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-icon="ri:bilibili-fill" class="iconify w-8 h-8 mr-3 text-white iconify--ri">
-          <path fill="currentColor" d="M18.223 3.086a1.25 1.25 0 0 1 0 1.768L17.08 5.996h1.17A3.75 3.75 0 0 1 22 9.747v7.5a3.75 3.75 0 0 1-3.75 3.75H5.75A3.75 3.75 0 0 1 2 17.247v-7.5a3.75 3.75 0 0 1 3.75-3.75h1.166L5.775 4.855a1.25 1.25 0 0 1 1.767-1.768l2.652 2.652q.119.119.198.257h3.213q.08-.14.199-.258l2.651-2.652a1.25 1.25 0 0 1 1.768 0m.027 5.42H5.75a1.25 1.25 0 0 0-1.247 1.157l-.003.094v7.5c0 .659.51 1.198 1.157 1.246l.093.004h12.5a1.25 1.25 0 0 0 1.247-1.157l.003-.093v-7.5c0-.69-.56-1.25-1.25-1.25m-10 2.5c.69 0 1.25.56 1.25 1.25v1.25a1.25 1.25 0 1 1-2.5 0v-1.25c0-.69.56-1.25 1.25-1.25m7.5 0c.69 0 1.25.56 1.25 1.25v1.25a1.25 1.25 0 1 1-2.5 0v-1.25c0-.69.56-1.25 1.25-1.25"></path>
-        </svg>
-        <span class="text-white font-semibold text-lg">Bilibili</span>
-      </div>
-    </a>
-    <!-- 小红书 按钮 -->
-    <a class="block" href="https://xhslink.com/m/2CqoUTOWV0Q" target="_blank">
-      <div class="bg-[#FF2442] rounded-xl p-5 flex items-center transition-all hover:shadow-lg">
-        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-icon="simple-icons:xiaohongshu" class="iconify w-8 h-8 mr-3 text-white iconify--simple-icons">
-          <path fill="currentColor" d="M22.405 9.879c.002.016.01.02.07.019h.725a.797.797 0 0 0 .78-.972a.794.794 0 0 0-.884-.618a.795.795 0 0 0-.692.794c0 .101-.002.666.001.777m-11.509 4.808c-.203.001-1.353.004-1.685.003a2.5 2.5 0 0 1-.766-.126a.025.025 0 0 0-.03.014L7.7 16.127a.025.025 0 0 0 .01.032c.111.06.336.124.495.124c.66.01 1.32.002 1.981 0q.017 0 .023-.015l.712-1.545a.025.025 0 0 0-.024-.036zM.477 9.91c-.071 0-.076.002-.076.01l-.01.08c-.027.397-.038.495-.234 3.06c-.012.24-.034.389-.135.607c-.026.057-.033.042.003.112c.046.092.681 1.523.787 1.74c.008.015.011.02.017.02c.008 0 .033-.026.047-.044q.219-.282.371-.606c.306-.635.44-1.325.486-1.706c.014-.11.021-.22.03-.33l.204-2.616l.022-.293c.003-.029 0-.033-.03-.034zm7.203 3.757a1.4 1.4 0 0 1-.135-.607c-.004-.084-.031-.39-.235-3.06a.4.4 0 0 0-.01-.082c-.004-.011-.052-.008-.076-.008h-1.48c-.03.001-.034.005-.03.034l.021.293q.114 1.473.233 2.946c.05.4.186 1.085.487 1.706c.103.215.223.419.37.606c.015.018.037.051.048.049c.02-.003.742-1.642.804-1.765c.036-.07.03-.055.003-.112m3.861-.913h-.872a.126.126 0 0 1-.116-.178l1.178-2.625a.025.025 0 0 0-.023-.035l-1.318-.003a.148.148 0 0 1-.135-.21l.876-1.954a.025.025 0 0 0-.023-.035h-1.56q-.017 0-.024.015l-.926 2.068c-.085.169-.314.634-.399.938a.5.5 0 0 0-.02.191a.46.46 0 0 0 .23.378a1 1 0 0 0 .46.119h.59c.041 0-.688 1.482-.834 1.972a.5.5 0 0 0-.023.172a.47.47 0 0 0 .23.398c.15.092.342.12.475.12l1.66-.001q.017 0 .023-.015l.575-1.28a.025.025 0 0 0-.024-.035m-6.93-4.937H3.1a.032.032 0 0 0-.034.033c0 1.048-.01 2.795-.01 6.829c0 .288-.269.262-.28.262h-.74c-.04.001-.044.004-.04.047c.001.037.465 1.064.555 1.263c.01.02.03.033.051.033c.157.003.767.009.938-.014c.153-.02.3-.06.438-.132c.3-.156.49-.419.595-.765c.052-.172.075-.353.075-.533q.003-3.495-.007-6.991a.03.03 0 0 0-.032-.032zm11.784 6.896q-.002-.02-.024-.022h-1.465c-.048-.001-.049-.002-.05-.049v-4.66c0-.072-.005-.07.07-.07h.863c.08 0 .075.004.075-.074V8.393c0-.082.006-.076-.08-.076h-3.5c-.064 0-.075-.006-.075.073v1.445c0 .083-.006.077.08.077h.854c.075 0 .07-.004.07.07v4.624c0 .095.008.084-.085.084c-.37 0-1.11-.002-1.304 0c-.048.001-.06.03-.06.03l-.697 1.519s-.014.025-.008.036s.013.008.058.008q2.622.003 5.243.002c.03-.001.034-.006.035-.033zm4.177-3.43q0 .021-.20.024c-.346.006-.692.004-1.037.004q-.021-.003-.022-.024q-.006-.651-.01-1.303c0-.072-.006-.071.07-.07l.733-.003c.041 0 .081.002.12.015c.093.025.16.107.165.204c.006.431.002 1.153.001 1.153m2.67.244a1.95 1.95 0 0 0-.883-.222h-.18c-.04-.001-.04-.003-.042-.04V10.21q.001-.198-.025-.394a1.8 1.8 0 0 0-.153-.53a1.53 1.53 0 0 0-.677-.71a2.2 2.2 0 0 0-1-.258c-.153-.003-.567 0-.72 0c-.07 0-.068.004-.068-.065V7.76c0-.031-.01-.041-.046-.039H17.93s-.016 0-.023.007q-.008.008-.008.023v.546c-.008.036-.057.015-.082.022h-.95c-.022.002-.028.008-.03.032v1.481c0 .09-.004.082.082.082h.913c.082 0 .072.128.072.128v1.148s.003.117-.06.117h-1.482c-.068 0-.06.082-.06.082v1.445s-.01.068.064.068h1.457c.082 0 .076-.006.076.079v3.225c0 .088-.007.081.082.081h1.43c.09 0 .082.007.082-.08v-3.27c0-.029.006-.035.033-.035l2.323-.003a.7.7 0 0 1 .28.061a.46.46 0 0 1 .274.407c.008.395.003.79.003 1.185c0 .259-.107.367-.33.367h-1.218c-.023.002-.029.008-.028.033q.276.655.57 1.303a.05.05 0 0 0 .04.026c.17.005.34.002.51.003c.15-.002.517.004.666-.01a2 2 0 0 0 .408-.075c.59-.18.975-.698.976-1.313v-1.981q.001-.191-.034-.38c0 .078-.029-.641-.724-.998"></path>
-        </svg>
-        <span class="text-white font-semibold text-lg">小红书</span>
-      </div>
-    </a>
-    <!-- QQ 按钮 -->
-    <a class="block" href="https://qun.qq.com/universal-share/share?ac=1&busi_data=eyJncm91cENvZGUiOiIzMjUyNjg5ODMiLCJ0b2tlbiI6InRIdUtueEhoU3l6Rjd0MUtjRzdEZVlybnJKb2toVHdJdkgvYjJaS0JTU0kxUVZVTlZYaElaY0NqbE8xMWdBSnoiLCJ1aW4iOiI4NTQ2ODc4MDUifQ%3D%3D&svctype=4&tempid=h5_group_info" target="_blank">
-      <div class="bg-[#12B7F5] rounded-xl p-5 flex items-center transition-all hover:shadow-lg">
-        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-icon="ri:qq-fill" class="iconify w-8 h-8 mr-3 text-white iconify--ri">
-          <path fill="currentColor" d="M19.914 14.529a32 32 0 0 0-.676-1.886l-.91-2.246c.002-.026.013-.468.013-.696C18.34 5.86 16.508 2 12 2S5.66 5.86 5.66 9.7c0 .229.011.671.012.697l-.91 2.246a32 32 0 0 0-.675 1.886c-.86 2.737-.581 3.87-.369 3.895c.455.054 1.771-2.06 1.771-2.06c0 1.224.637 2.822 2.016 3.976c-.515.157-1.147.399-1.554.695c-.365.267-.319.54-.253.65c.289.481 4.955.307 6.303.157c1.347.15 6.014.324 6.302-.158c.066-.11.112-.382-.253-.649c-.407-.296-1.039-.538-1.555-.695c1.379-1.154 2.016-2.752 2.016-3.977c0 0 1.316 2.115 1.771 2.06c.212-.025.49-1.157-.37-3.894"></path>
-        </svg>
-        <span class="text-white font-semibold text-lg">QQ</span>
-      </div>
-    </a>
-          <p class="text-gray-800 mb-6">联系我们</p>
-          <h2 class="text-xl font-bold text-gray-900 mb-6" style="font-family: TaipeiHei; font-weight: 400;">tinbird@gmail.com</h2>
-          <p class="text-gray-600 mb-6"> </p>
-          <p class="text-gray-400 mb-6">TIN BIRD 锡鸟游戏</p>
-        </div>
-      </div>
-    </main>
-    <!-- 底部导航 -->
+    <!-- 关注我们标题 -->
+    <h2 class="section-title"> 关注我们...</h2>
 
+    <!-- 社交媒体按钮组 -->
+    <div class="social-buttons">
+      <!-- Steam 按钮 -->
+      <a class="social-button" href="https://store.steampowered.com/app/3473430/_All_Our_Broken_Parts/" target="_blank" style="background-color: #1b2838;">
+        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+          <path d="M12 2a10 10 0 0 1 10 10a10 10 0 0 1-10 10c-4.6 0-8.45-3.08-9.64-7.27l3.83 1.58a2.84 2.84 0 0 0 2.78 2.27c1.56 0 2.83-1.27 2.83-2.83v-.13l3.4-2.43h.08c2.08 0 3.77-1.69 3.77-3.77s-1.69-3.77-3.77-3.77s-3.78 1.69-3.78 3.77v.05l-2.37 3.46l-.16-.01c-.59 0-1.14.18-1.59.49L2 11.2C2.43 6.05 6.73 2 12 2M8.28 17.17c.8.33 1.72-.04 2.05-.84s-.05-1.71-.83-2.04l-1.28-.53c.49-.18 1.04-.19 1.56.03c.53.21.94.62 1.15 1.15c.22.52.22 1.1 0 1.62c-.43 1.08-1.7 1.6-2.78 1.15c-.5-.21-.88-.59-1.09-1.04zm9.52-7.75c0 1.39-1.13 2.52-2.52 2.52a2.52 2.52 0 0 1-2.51-2.52a2.5 2.5 0 0 1 2.51-2.51a2.52 2.52 0 0 1 2.52 2.51m-4.4 0c0 1.04.84 1.89 1.89 1.89c1.04 0 1.88-.85 1.88-1.89s-.84-1.89-1.88-1.89c-1.05 0-1.89.85-1.89 1.89"/>
+        </svg>
+        <span class="social-name">Steam</span>
+      </a>
+
+      <!-- 小黑盒 按钮 -->
+      <a class="social-button" href="https://api.xiaoheihe.cn/game/share_game_detail?appid=3473430&game_type=pc&h_camp=game&h_src=ZXNfZ2VuZXJhbF92MQ%3D%3D" target="_blank" style="background-color: #f1f2f3;">
+        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#393cf">
+          <path d="M2 10.96a.985.985 0 0 1-.37-1.37L3.13 7c.11-.2.28-.34.47-.42l7.83-4.4c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.19.1.35.26.44.46l1.45 2.52c.28.48.11 1.09-.36 1.36l-1 .58v4.96c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-5.54c-.3.17-.68.18-1 0m10-6.81v6.7l5.96-3.35zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-3.22l-5 2.9c-.33.18-.7.17-1 .01v3.69zm-5.15-2.55l6.28-3.63l-.58-1.01l-6.28 3.63z"/>
+        </svg>
+        <span class="social-name" style="color:#393c3f;">小黑盒</span>
+      </a>
+
+      <!-- Bilibili 按钮 -->
+      <a class="social-button" href="https://www.bilibili.com/video/BV1uCahzTEz4?buvid=Y945309401D4E1014921A032C758698FD626&is_story_h5=false&mid=oskQDzqEEbcg%2B1HyFVIZvA%3D%3D&plat_id=114&share_from=ugc&share_medium=iphone&share_plat=ios&share_source=WEIXIN&share_tag=s_i&timestamp=1762952653&unique_k=cYPHGVf&up_id=3546879799331126" target="_blank" style="background-color: #FB7299;">
+        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+          <path d="M18.223 3.086a1.25 1.25 0 0 1 0 1.768L17.08 5.996h1.17A3.75 3.75 0 0 1 22 9.747v7.5a3.75 3.75 0 0 1-3.75 3.75H5.75A3.75 3.75 0 0 1 2 17.247v-7.5a3.75 3.75 0 0 1 3.75-3.75h1.166L5.775 4.855a1.25 1.25 0 0 1 1.767-1.768l2.652 2.652q.119.119.198.257h3.213q.08-.14.199-.258l2.651-2.652a1.25 1.25 0 0 1 1.768 0m.027 5.42H5.75a1.25 1.25 0 0 0-1.247 1.157l-.003.094v7.5c0 .659.51 1.198 1.157 1.246l.093.004h12.5a1.25 1.25 0 0 0 1.247-1.157l.003-.093v-7.5c0-.69-.56-1.25-1.25-1.25m-10 2.5c.69 0 1.25.56 1.25 1.25v1.25a1.25 1.25 0 1 1-2.5 0v-1.25c0-.69.56-1.25 1.25-1.25m7.5 0c.69 0 1.25.56 1.25 1.25v1.25a1.25 1.25 0 1 1-2.5 0v-1.25c0-.69.56-1.25 1.25-1.25"/>
+        </svg>
+        <span class="social-name">Bilibili</span>
+      </a>
+
+      <!-- 小红书 按钮 -->
+      <a class="social-button" href="https://xhslink.com/m/2CqoUTOWV0Q" target="_blank" style="background-color: #FF2442;">
+        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+          <path d="M22.405 9.879c.002.016.01.02.07.019h.725a.797.797 0 0 0 .78-.972a.794.794 0 0 0-.884-.618a.795.795 0 0 0-.692.794c0 .101-.002.666.001.777m-11.509 4.808c-.203.001-1.353.004-1.685.003a2.5 2.5 0 0 1-.766-.126a.025.025 0 0 0-.03.014L7.7 16.127a.025.025 0 0 0 .01.032c.111.06.336.124.495.124c.66.01 1.32.002 1.981 0q.017 0 .023-.015l.712-1.545a.025.025 0 0 0-.024-.036zM.477 9.91c-.071 0-.076.002-.076.01l-.01.08c-.027.397-.038.495-.234 3.06c-.012.24-.034.389-.135.607c-.026.057-.033.042.003.112c.046.092.681 1.523.787 1.74c.008.015.011.02.017.020c.008 0 .033-.026.047-.044q.219-.282.371-.606c.306-.635.44-1.325.486-1.706c.014-.110.021-.220.03-.330l.204-2.616l.022-.293c.003-.029 0-.033-.03-.034zm7.203 3.757a1.4 1.4 0 0 1-.135-.607c-.004-.084-.031-.390-.235-3.060a.4.4 0 0 0-.010-.082c-.004-.011-.052-.008-.076-.008h-1.480c-.030.001-.034.005-.030.034l.021.293q.114 1.473.233 2.946c.050.400.186 1.085.487 1.706c.103.215.223.419.370.606c.015.018.037.051.048.049c.020-.003.742-1.642.804-1.765c.036-.070.030-.055.003-.112m3.861-.913h-.872a.126.126 0 0 1-.116-.178l1.178-2.625a.025.025 0 0 0-.023-.035l-1.318-.003a.148.148 0 0 1-.135-.210l.876-1.954a.025.025 0 0 0-.023-.035h-1.560q-.017 0-.024.015l-.926 2.068c-.085.169-.314.634-.399.938a.5.5 0 0 0-.020.191a.46.46 0 0 0 .230.378a1 1 0 0 0 .460.119h.590c.041 0-.688 1.482-.834 1.972a.5.5 0 0 0-.023.172a.47.47 0 0 0 .230.398c.150.092.342.120.475.120l1.660-.001q.017 0 .023-.015l.575-1.280a.025.025 0 0 0-.024-.035m-6.930-4.937H3.100a.032.032 0 0 0-.034.033c0 1.048-.010 2.795-.010 6.829c0 .288-.269.262-.280.262h-.740c-.040.001-.044.004-.040.047c.001.037.465 1.064.555 1.263c.010.020.030.033.051.033c.157.003.767.009.938-.014c.153-.020.300-.060.438-.132c.300-.156.490-.419.595-.765c.052-.172.075-.353.075-.533q.003-3.495-.007-6.991a.030.030 0 0 0-.032-.032zm11.784 6.896q-.002-.020-.024-.022h-1.465c-.048-.001-.049-.002-.050-.049v-4.660c0-.072-.005-.070.070-.070h.863c.080 0 .075.004.075-.074V8.393c0-.082.006-.076-.080-.076h-3.500c-.064 0-.075-.006-.075.073v1.445c0 .083-.006.077.080.077h.854c.075 0 .070-.004.070.070v4.624c0 .095.008.084-.085.084c-.370 0-1.110-.002-1.304 0c-.048.001-.060.030-.060.030l-.697 1.519s-.014.025-.008.036s.013.008.058.008q2.622.003 5.243.002c.030-.001.034-.006.035-.033zm4.177-3.430q0 .021-.200.024c-.346.006-.692.004-1.037.004q-.021-.003-.022-.024q-.006-.651-.010-1.303c0-.072-.006-.071.070-.070l.733-.003c.041 0 .081.002.120.015c.093.025.160.107.165.204c.006.431.002 1.153.001 1.153m2.670.244a1.95 1.95 0 0 0-.883-.222h-.180c-.040-.001-.040-.003-.042-.040V10.21q.001-.198-.025-.394a1.8 1.8 0 0 0-.153-.530a1.53 1.53 0 0 0-.677-.710a2.2 2.2 0 0 0-1.000-.258c-.153-.003-.567 0-.720 0c-.070 0-.068.004-.068-.065V7.760c0-.031-.010-.041-.046-.039H17.930s-.016 0-.023.007q-.008.008-.008.023v.546c-.008.036-.057.015-.082.022h-.950c-.022.002-.028.008-.030.032v1.481c0 .090-.004.082.082.082h.913c.082 0 .072.128.072.128v1.148s.003.117-.060.117h-1.482c-.068 0-.060.082-.060.082v1.445s-.010.068.064.068h1.457c.082 0 .076-.006.076.079v3.225c0 .088-.007.081.082.081h1.430c.090 0 .082.007.082-.080v-3.270c0-.029.006-.035.033-.035l2.323-.003a.7.7 0 0 1 .280.061a.46.46 0 0 1 .274.407c.008.395.003.790.003 1.185c0 .259-.107.367-.330.367h-1.218c-.023.002-.029.008-.028.033q.276.655.570 1.303a.05.05 0 0 0 .040.026c.170.005.340.002.510.003c.150-.002.517.004.666-.010a2 2 0 0 0 .408-.075c.590-.180.975-.698.976-1.313v-1.981q.001-.191-.034-.380c0 .078-.029-.641-.724-.998"/>
+        </svg>
+        <span class="social-name">小红书</span>
+      </a>
+
+      <!-- QQ 按钮 -->
+      <a class="social-button" href="https://qun.qq.com/universal-share/share?ac=1&busi_data=eyJncm91cENvZGUiOiIzMjUyNjg5ODMiLCJ0b2tlbiI6InRIdUtueEhoU3l6Rjd0MUtjRzdEZVlybnJKb2toVHdJdkgvYjJaS0JTU0kxUVZVTlZYaElaY0NqbE8xMWdBSnoiLCJ1aW4iOiI4NTQ2ODc4MDUifQ%3D%3D&svctype=4&tempid=h5_group_info" target="_blank" style="background-color: #12B7F5;">
+        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+          <path d="M19.914 14.529a32 32 0 0 0-.676-1.886l-.91-2.246c.002-.026.013-.468.013-.696C18.34 5.86 16.508 2 12 2S5.66 5.86 5.66 9.7c0 .229.011.671.012.697l-.91 2.246a32 32 0 0 0-.675 1.886c-.86 2.737-.581 3.87-.369 3.895c.455.054 1.771-2.06 1.771-2.06c0 1.224.637 2.822 2.016 3.976c-.515.157-1.147.399-1.554.695c-.365.267-.319.54-.253.65c.289.481 4.955.307 6.303.157c1.347.150 6.014.324 6.302-.158c.066-.11.112-.382-.253-.649c-.407-.296-1.039-.538-1.555-.695c1.379-1.154 2.016-2.752 2.016-3.977c0 0 1.316 2.115 1.771 2.06c.212-.025.490-1.157-.370-3.894"/>
+        </svg>
+        <span class="social-name">Q Q 群</span>
+      </a>
+    </div>
+
+    <!-- 联系信息 -->
+    <div class="contact-info">
+      <a class="contact-email" href="mailto:tinbird@gmail.com">tinbird@gmail.com</a>
+      <p class="company-name">TIN BIRD 锡鸟游戏</p>
+    </div>
   </div>
-
-
 </body>
 
 </html>
